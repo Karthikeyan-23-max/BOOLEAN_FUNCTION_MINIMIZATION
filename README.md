@@ -17,7 +17,6 @@ Hardware – PCs, Cyclone II , USB flasher
 **Theory**
 
 **Logic Diagram**   
-   ![WhatsApp Image 2024-10-29 at 2 17 16 PM](https://github.com/user-attachments/assets/ffa16390-f730-4189-bcd0-6e077c81aae4)
 
 **Procedure**
 
@@ -33,16 +32,28 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-
+```
+module experiment2(a,b,c,d,f1,w,x,y,z,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+assign f1=((~b&~c)|(~a&b&d)|(a&b&~c));
+assign f2=((~y&z)|(x&y)|(w&y));
+endmodule
+```
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: KARTHIKEYAN C RegisterNumber:24900091*/
+**TRUTH TABLE**
+![392007889-b2e6f509-64de-444c-a5fa-e40898d2b160](https://github.com/user-attachments/assets/6247d250-dfe5-4617-87f6-6c3af00c8556)
+![392007968-0ff0cc8d-a388-4297-ac03-7771303160b7](https://github.com/user-attachments/assets/25b969c5-272e-4adb-9366-6235a56d97f8)
 
+**RTL realization** 
+![Screenshot 2024-12-06 203438](https://github.com/user-attachments/assets/d719e96b-5c6c-4995-9efb-e5a6eb3523d7)
 
-**RTL realization**  ![Screenshot 2024-11-05 141053](https://github.com/user-attachments/assets/7cc01f81-e830-4f81-accf-f7868b04dc52)
+**OUTPUT**   
+**RTL**   
 
-**Timing Diagram**   ![Screenshot 2024-11-05 141656](https://github.com/user-attachments/assets/1e891d57-91a0-45f3-8bd5-a5d2c5297342)
-
+![387574673-4bfc069b-5f93-4d1a-b89d-8529cbe889b7](https://github.com/user-attachments/assets/45ba91f7-21e9-4afb-9b1b-f36db4d88d72)
 
 **Result:**  The Basic Logic gates are studied and truth table are verified.
 
